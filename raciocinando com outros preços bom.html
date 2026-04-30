@@ -1,0 +1,529 @@
+<!DOCTYPE html><html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Raciocinando Como — Aprenda a pensar como os grandes profissionais</title>  <script src="https://cdn.tailwindcss.com"></script>  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: "#07111f",
+            panel: "#0f172a",
+            accent: "#38bdf8",
+            blue: "#2563eb",
+            green: "#22c55e",
+            gold: "#f59e0b",
+            red: "#fb7185"
+          }
+        }
+      }
+    }
+  </script>  <style>
+    html { scroll-behavior: smooth; }
+    body{
+      background:
+        radial-gradient(900px 520px at 18% 8%, rgba(37,99,235,.25), transparent 55%),
+        radial-gradient(900px 520px at 85% 8%, rgba(34,197,94,.18), transparent 55%),
+        radial-gradient(1000px 600px at 50% 95%, rgba(245,158,11,.12), transparent 60%),
+        #07111f;
+      overflow-x:hidden;
+    }
+    .gradient-text{
+      background: linear-gradient(90deg, #38bdf8, #22c55e, #facc15);
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+    }
+    .glass{
+      background: rgba(255,255,255,.055);
+      border: 1px solid rgba(255,255,255,.11);
+      backdrop-filter: blur(14px);
+    }
+    .glow{
+      box-shadow: 0 20px 70px rgba(0,0,0,.55), 0 0 55px rgba(56,189,248,.14);
+    }
+    .green-glow{
+      box-shadow: 0 20px 70px rgba(0,0,0,.55), 0 0 55px rgba(34,197,94,.15);
+    }
+    .stickybar{
+      background: rgba(7,17,31,.72);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      backdrop-filter: blur(14px);
+    }
+    .reveal{ opacity:0; transform: translateY(22px); transition: opacity .75s ease, transform .75s ease; }
+    .reveal.in{ opacity:1; transform: translateY(0); }
+    @keyframes floaty { 0%{transform:translateY(0)} 50%{transform:translateY(-8px)} 100%{transform:translateY(0)} }
+    .floaty { animation: floaty 6s ease-in-out infinite; }
+  </style></head><body class="text-white font-sans"><header class="sticky top-0 z-50 stickybar">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+    <a href="#topo" class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-r from-blue via-accent to-green"></div>
+      <div class="leading-tight">
+        <div class="font-extrabold tracking-tight">Raciocinando Como</div>
+        <div class="text-xs text-white/65">Pensamento profissional para vida, renda e criação</div>
+      </div>
+    </a><nav class="hidden md:flex items-center gap-2 text-sm text-white/75">
+  <a class="px-3 py-2 rounded-xl hover:bg-white/5 hover:text-white transition" href="#beneficios">Benefícios</a>
+  <a class="px-3 py-2 rounded-xl hover:bg-white/5 hover:text-white transition" href="#metodo">Método</a>
+  <a class="px-3 py-2 rounded-xl hover:bg-white/5 hover:text-white transition" href="#trilhas">Trilhas</a>
+  <a class="px-3 py-2 rounded-xl hover:bg-white/5 hover:text-white transition" href="#planos">Planos</a>
+  <a class="px-3 py-2 rounded-xl hover:bg-white/5 hover:text-white transition" href="#aplicar">Aplicar</a>
+</nav>
+
+<a id="nav-wa" href="#" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-green to-emerald-200 text-brand font-extrabold hover:brightness-105 transition">
+  WhatsApp
+</a>
+
+  </div>
+</header><section id="topo" class="relative pt-14 pb-12">
+  <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
+    <div class="reveal">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass">
+        <span class="w-2.5 h-2.5 rounded-full bg-green"></span>
+        <span class="text-sm text-white/80">Para jovens, profissionais e futuros empreendedores</span>
+      </div><h1 class="mt-5 text-4xl md:text-6xl font-black tracking-tight leading-[1.04]">
+    Aprenda a <span class="gradient-text">raciocinar como médico, engenheiro, economista e fundador</span> — sem precisar fazer outra faculdade para começar.
+  </h1>
+
+  <p class="mt-6 text-lg md:text-xl text-white/76 leading-relaxed max-w-xl">
+    Uma formação prática para quem quer tomar decisões melhores, gastar menos por erro, ganhar mais por estratégia, criar projetos, empreender e transformar conhecimento em vantagem real.
+  </p>
+
+  <div class="mt-6 grid sm:grid-cols-3 gap-3 max-w-xl">
+    <div class="glass rounded-2xl p-4">
+      <div class="text-2xl font-black gradient-text">1</div>
+      <div class="text-sm text-white/70">Pensar melhor</div>
+    </div>
+    <div class="glass rounded-2xl p-4">
+      <div class="text-2xl font-black gradient-text">2</div>
+      <div class="text-sm text-white/70">Decidir melhor</div>
+    </div>
+    <div class="glass rounded-2xl p-4">
+      <div class="text-2xl font-black gradient-text">3</div>
+      <div class="text-sm text-white/70">Criar mais valor</div>
+    </div>
+  </div>
+
+  <div class="mt-7 flex flex-col sm:flex-row gap-3">
+    <a href="#aplicar" class="inline-flex justify-center items-center px-6 py-4 rounded-2xl bg-gradient-to-r from-accent to-green text-brand font-black shadow-lg hover:brightness-105 transition">
+      Quero entrar na próxima turma
+    </a>
+    <a id="hero-wa" href="#" target="_blank" class="inline-flex justify-center items-center px-6 py-4 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 transition">
+      Receber ementa no WhatsApp
+    </a>
+  </div>
+
+  <p class="mt-4 text-xs text-white/55 max-w-xl">
+    Não promete enriquecimento automático, diploma profissional ou substituição de graduação regulamentada. A proposta é desenvolver raciocínio, autonomia, estratégia e capacidade de criação.
+  </p>
+</div>
+
+<div class="reveal">
+  <div class="glass rounded-[24px] p-6 glow">
+    <div class="flex items-start justify-between gap-3">
+      <div>
+        <div class="text-sm text-white/60">Oferta central</div>
+        <h2 class="mt-1 text-3xl font-black tracking-tight">Transforme conhecimento em decisão, renda e projeto.</h2>
+      </div>
+      <span class="px-3 py-1.5 rounded-full bg-green/15 border border-green/25 text-green text-xs font-bold">Ciclo aberto</span>
+    </div>
+
+    <div class="mt-6 space-y-3">
+      <div class="rounded-2xl bg-black/20 border border-white/10 p-4">
+        <b>Para gastar menos</b>
+        <p class="mt-1 text-sm text-white/70">Reduza decisões impulsivas, compras erradas, escolhas ruins de carreira, projetos mal desenhados e desperdício de tempo.</p>
+      </div>
+      <div class="rounded-2xl bg-black/20 border border-white/10 p-4">
+        <b>Para ganhar mais</b>
+        <p class="mt-1 text-sm text-white/70">Aprenda a enxergar oportunidades, criar ofertas, resolver problemas melhores e construir caminhos de renda com método.</p>
+      </div>
+      <div class="rounded-2xl bg-black/20 border border-white/10 p-4">
+        <b>Para criar coisas</b>
+        <p class="mt-1 text-sm text-white/70">Saia do consumo passivo de conteúdo para projetos: produto, serviço, pesquisa, negócio, protótipo ou plano de atuação.</p>
+      </div>
+    </div>
+
+    <a href="#aplicar" class="floaty mt-6 inline-flex w-full justify-center items-center px-6 py-4 rounded-2xl bg-gradient-to-r from-green to-emerald-200 text-brand font-black hover:brightness-105 transition">
+      Aplicar agora
+    </a>
+  </div>
+</div>
+
+  </div>
+</section><section id="beneficios" class="py-14">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="reveal text-center max-w-3xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-black tracking-tight">O que o aluno compra de verdade?</h2>
+      <p class="mt-4 text-white/75 leading-relaxed">
+        Ele não compra apenas aulas. Ele compra uma nova forma de analisar a vida, o trabalho, o dinheiro, os problemas e as oportunidades.
+      </p>
+    </div><div class="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+  <div class="reveal glass rounded-2xl p-6"><div class="text-xl font-black">Clareza</div><p class="mt-2 text-sm text-white/70">Saber o que priorizar, o que ignorar e onde colocar energia.</p></div>
+  <div class="reveal glass rounded-2xl p-6"><div class="text-xl font-black">Economia</div><p class="mt-2 text-sm text-white/70">Evitar decisões caras, cursos inúteis, projetos sem direção e perdas evitáveis.</p></div>
+  <div class="reveal glass rounded-2xl p-6"><div class="text-xl font-black">Renda</div><p class="mt-2 text-sm text-white/70">Pensar em ofertas, ativos, serviços, projetos e caminhos de monetização.</p></div>
+  <div class="reveal glass rounded-2xl p-6"><div class="text-xl font-black">Criação</div><p class="mt-2 text-sm text-white/70">Transformar ideias soltas em produto, serviço, método, conteúdo ou negócio.</p></div>
+</div>
+
+<div class="reveal mt-8 glass rounded-3xl p-7 green-glow">
+  <div class="grid lg:grid-cols-3 gap-5 items-center">
+    <div class="lg:col-span-2">
+      <div class="text-sm text-white/60">Mensagem comercial forte</div>
+      <h3 class="mt-1 text-2xl md:text-3xl font-black tracking-tight">Você não precisa esperar anos para começar a pensar melhor.</h3>
+      <p class="mt-3 text-white/72 leading-relaxed">
+        Faculdade pode ser importante para profissões regulamentadas. Mas raciocínio, estratégia, decisão, criatividade, economia pessoal e criação de projetos podem ser treinados agora — com método, casos, exercícios e direção.
+      </p>
+    </div>
+    <a href="#aplicar" class="inline-flex justify-center items-center px-6 py-4 rounded-2xl bg-gradient-to-r from-accent to-green text-brand font-black hover:brightness-105 transition">
+      Quero saber meu nível ideal
+    </a>
+  </div>
+</div>
+
+  </div>
+</section><section id="metodo" class="py-14">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="reveal text-center max-w-3xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-black tracking-tight">Método: raciocinar como profissionais para aplicar na vida real</h2>
+      <p class="mt-4 text-white/75 leading-relaxed">
+        Cada trilha ensina uma linha de raciocínio profissional aplicada à vida, renda, carreira, criação de produtos, serviços e redução da assimetria de informação.
+      </p>
+    </div><div class="mt-10 grid lg:grid-cols-2 gap-4">
+  <div class="reveal glass rounded-3xl p-6 glow">
+    <div class="text-sm text-white/60">Trilha profissional</div>
+    <h3 class="mt-1 text-2xl font-black">Raciocinando como Médico</h3>
+    <p class="mt-3 text-sm text-white/70 leading-relaxed">
+      Economia e administração das doenças, raciocínio diagnóstico, prevenção de erros, leitura de risco, custo de decisões em saúde e uso de conceitos da medicina para a vida real.
+    </p>
+    <div class="mt-4 rounded-2xl bg-black/20 border border-white/10 p-4 text-sm text-white/72">
+      <b>Aplicações:</b> gastar menos com decisões ruins, entender melhor problemas de saúde, evitar assimetria de informação, criar serviços, produtos, conteúdos ou soluções ligadas à saúde.
+    </div>
+  </div>
+
+  <div class="reveal glass rounded-3xl p-6">
+    <div class="text-sm text-white/60">Trilha profissional</div>
+    <h3 class="mt-1 text-2xl font-black">Raciocinando como Engenheiro</h3>
+    <p class="mt-3 text-sm text-white/70 leading-relaxed">
+      Pensamento por sistemas, projeto, restrições, falhas, prototipagem, eficiência, automação e transformação de problemas em soluções construíveis.
+    </p>
+    <div class="mt-4 rounded-2xl bg-black/20 border border-white/10 p-4 text-sm text-white/72">
+      <b>Aplicações:</b> criar produtos, reduzir desperdícios, estruturar soluções, melhorar processos, entender tecnologia e transformar ideias em protótipos ou serviços.
+    </div>
+  </div>
+
+  <div class="reveal glass rounded-3xl p-6">
+    <div class="text-sm text-white/60">Trilha profissional</div>
+    <h3 class="mt-1 text-2xl font-black">Raciocinando como Economista</h3>
+    <p class="mt-3 text-sm text-white/70 leading-relaxed">
+      Incentivos, custos, escassez, risco, retorno, escolhas intertemporais, custo de oportunidade e análise econômica de decisões pessoais e profissionais.
+    </p>
+    <div class="mt-4 rounded-2xl bg-black/20 border border-white/10 p-4 text-sm text-white/72">
+      <b>Aplicações:</b> gastar menos, ganhar mais, precificar melhor, avaliar oportunidades, entender mercados e tomar decisões com mais racionalidade econômica.
+    </div>
+  </div>
+
+  <div class="reveal glass rounded-3xl p-6">
+    <div class="text-sm text-white/60">Trilha profissional</div>
+    <h3 class="mt-1 text-2xl font-black">Raciocinando como Administrador</h3>
+    <p class="mt-3 text-sm text-white/70 leading-relaxed">
+      Execução, rotina, métricas, operação, gestão de pessoas, processos, coordenação, produtividade e transformação de intenção em resultado.
+    </p>
+    <div class="mt-4 rounded-2xl bg-black/20 border border-white/10 p-4 text-sm text-white/72">
+      <b>Aplicações:</b> organizar vida, trabalho, estudos, pequenos negócios, projetos pessoais e execução com menos confusão e mais consistência.
+    </div>
+  </div>
+</div>
+
+<div class="reveal mt-8 glass rounded-3xl p-7 green-glow">
+  <div class="grid lg:grid-cols-3 gap-5 items-center">
+    <div class="lg:col-span-2">
+      <div class="text-sm text-white/60">Linha premium</div>
+      <h3 class="mt-1 text-2xl md:text-3xl font-black tracking-tight">Empreendedores Inovadores</h3>
+      <p class="mt-3 text-white/75 leading-relaxed">
+        Para quem quer usar uma ou mais trilhas profissionais para criar produto, serviço, método, conteúdo, consultoria, negócio, ativo digital ou posicionamento de mercado.
+      </p>
+    </div>
+    <a href="#planos" class="inline-flex justify-center items-center px-6 py-4 rounded-2xl bg-gradient-to-r from-green to-emerald-200 text-brand font-black hover:brightness-105 transition">
+      Ver planos
+    </a>
+  </div>
+</div>
+
+  </div>
+</section><section id="trilhas" class="py-14">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="reveal text-center max-w-3xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-black tracking-tight">Para quem é</h2>
+      <p class="mt-4 text-white/75 leading-relaxed">
+        Para jovens ambiciosos, universitários, profissionais em formação, profissionais em atuação e pessoas que querem transformar raciocínio profissional em valor real.
+      </p>
+    </div><div class="mt-10 grid lg:grid-cols-3 gap-4">
+  <div class="reveal glass rounded-3xl p-7">
+    <h3 class="text-2xl font-black">Jovens e universitários</h3>
+    <p class="mt-3 text-sm text-white/70 leading-relaxed">
+      Para quem quer desenvolver base mental forte, escolher melhor caminhos, aprender com mais direção e não perder anos em tentativa cega.
+    </p>
+  </div>
+
+  <div class="reveal glass rounded-3xl p-7 glow">
+    <h3 class="text-2xl font-black">Profissionais</h3>
+    <p class="mt-3 text-sm text-white/70 leading-relaxed">
+      Para quem quer reorganizar decisão, método, clareza, execução, posicionamento profissional, carreira, renda e projetos paralelos.
+    </p>
+  </div>
+
+  <div class="reveal glass rounded-3xl p-7 green-glow">
+    <h3 class="text-2xl font-black">Empreendedores inovadores</h3>
+    <p class="mt-3 text-sm text-white/70 leading-relaxed">
+      Para quem quer transformar conhecimento em produto, serviço, renda, ativo, consultoria, conteúdo, método, negócio ou startup.
+    </p>
+  </div>
+</div>
+
+  </div>
+</section><section id="planos" class="py-14">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="reveal text-center max-w-3xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-black tracking-tight">Planos de acesso</h2>
+      <p class="mt-4 text-white/75 leading-relaxed">
+        Cada trilha funciona como uma biblioteca viva, atualizada ao longo dos 12 meses de assinatura.
+      </p>
+    </div><div class="mt-10 grid lg:grid-cols-2 gap-6">
+  <div class="reveal glass rounded-3xl p-7 glow">
+    <div class="text-sm text-white/60">Plano geral</div>
+    <h3 class="mt-1 text-2xl font-black">Raciocinando Como Profissionais</h3>
+    <p class="mt-3 text-sm text-white/70 leading-relaxed">
+      Para quem quer acesso às trilhas profissionais com foco em raciocínio aplicado à vida, carreira, estudos, renda e decisões práticas.
+    </p>
+
+    <div class="mt-6 grid md:grid-cols-2 gap-4">
+      <div class="rounded-2xl bg-black/20 border border-white/10 p-5">
+        <div class="text-sm text-white/55">1 trilha</div>
+        <div class="mt-3 text-2xl font-black">12 meses: R$ 497</div>
+        <p class="mt-2 text-xs text-white/55">Ideal para começar por uma área: Médico, Engenheiro, Economista ou Administrador.</p>
+      </div>
+      <div class="rounded-2xl bg-black/20 border border-white/10 p-5">
+        <div class="text-sm text-white/55">2 trilhas</div>
+        <div class="mt-3 text-2xl font-black">12 meses: R$ 697</div>
+        <p class="mt-2 text-xs text-white/55">Melhor custo-benefício para combinar duas formas de raciocínio.</p>
+      </div>
+    </div>
+
+    <p class="mt-6 text-sm text-white/65">
+      Trilhas iniciais: Médico, Engenheiro, Economista e Administrador.
+    </p>
+    <a href="#aplicar" class="mt-6 inline-flex w-full justify-center px-5 py-3 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 transition">Aplicar para este plano</a>
+  </div>
+
+  <div class="reveal glass rounded-3xl p-7 green-glow border border-green/25">
+    <div class="text-sm text-white/60">Linha premium</div>
+    <h3 class="mt-1 text-2xl font-black">Empreendedores Inovadores</h3>
+    <p class="mt-3 text-sm text-white/70 leading-relaxed">
+      Para aplicação mais forte em negócio, produto, serviço, ativo, projeto, posicionamento e criação de valor econômico.
+    </p>
+
+    <div class="mt-6 grid md:grid-cols-2 gap-4">
+      <div class="rounded-2xl bg-black/20 border border-white/10 p-5">
+        <div class="text-sm text-white/55">1 trilha profissional</div>
+        <div class="mt-3 text-2xl font-black gradient-text">12 meses: R$ 1.497</div>
+        <p class="mt-2 text-xs text-white/55">Para criar uma oferta, método, produto ou serviço usando uma base profissional.</p>
+      </div>
+      <div class="rounded-2xl bg-black/20 border border-white/10 p-5">
+        <div class="text-sm text-white/55">2 trilhas profissionais</div>
+        <div class="mt-3 text-2xl font-black gradient-text">12 meses: R$ 2.497</div>
+        <p class="mt-2 text-xs text-white/55">Para criar soluções mais interdisciplinares e com maior potencial de diferenciação.</p>
+      </div>
+    </div>
+
+    <p class="mt-6 text-sm text-white/65">
+      Melhor para quem quer transformar raciocínio em valor econômico e execução estratégica.
+    </p>
+    <a href="#aplicar" class="mt-6 inline-flex w-full justify-center px-5 py-3 rounded-2xl bg-gradient-to-r from-green to-emerald-200 text-brand font-black hover:brightness-105 transition">Aplicar para Empreendedores</a>
+  </div>
+</div>
+
+<div class="reveal mt-8 glass rounded-3xl p-7 glow">
+  <h3 class="text-2xl font-black">O que você passa a ter na prática</h3>
+  <div class="mt-6 grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm text-white/80">
+    <div class="rounded-2xl bg-black/20 border border-white/10 p-5">
+      <b>Pensar como profissional</b>
+      <p class="mt-2 text-white/70">Você aprende a analisar problemas como médico, engenheiro, economista ou administrador — mesmo sem precisar passar anos em uma faculdade para desenvolver essa base de raciocínio.</p>
+    </div>
+    <div class="rounded-2xl bg-black/20 border border-white/10 p-5">
+      <b>Reduzir erros e gastos</b>
+      <p class="mt-2 text-white/70">Menos decisões ruins, menos desperdício de tempo, dinheiro e energia. Você passa a enxergar risco, custo e consequência antes de agir.</p>
+    </div>
+    <div class="rounded-2xl bg-black/20 border border-white/10 p-5">
+      <b>Criar produtos e serviços</b>
+      <p class="mt-2 text-white/70">Você aprende a transformar conhecimento em solução: produto, serviço, consultoria, conteúdo ou projeto com valor real.</p>
+    </div>
+    <div class="rounded-2xl bg-black/20 border border-white/10 p-5">
+      <b>Ganhar mais com estratégia</b>
+      <p class="mt-2 text-white/70">Mais clareza para gerar renda, melhorar posicionamento, criar ofertas e identificar oportunidades que antes passavam despercebidas.</p>
+    </div>
+  </div>
+</div>
+
+  </div>
+</section><section id="prova" class="py-14">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="reveal glass rounded-3xl p-8 glow">
+      <div class="grid lg:grid-cols-2 gap-8 items-center">
+        <div>
+          <div class="text-sm text-white/60">Como funciona a entrega</div>
+          <h2 class="mt-1 text-3xl md:text-4xl font-black tracking-tight">Você aprende, aplica e usa na vida real</h2>
+          <p class="mt-4 text-white/75 leading-relaxed">
+            O objetivo não é assistir aulas. É mudar a forma como você pensa, decide, trabalha e cria valor. Tudo é voltado para aplicação prática na sua realidade.
+          </p>
+        </div>
+        <div class="space-y-3">
+          <div class="rounded-2xl bg-black/20 border border-white/10 p-4">
+            <b>Aplicação prática</b>
+            <p class="text-sm text-white/65 mt-1">Você usa o raciocínio no seu dia a dia: decisões, trabalho, estudos, renda e projetos.</p>
+          </div>
+          <div class="rounded-2xl bg-black/20 border border-white/10 p-4">
+            <b>Construção progressiva</b>
+            <p class="text-sm text-white/65 mt-1">Você evolui com o tempo, ganhando mais clareza, segurança e capacidade de execução.</p>
+          </div>
+          <div class="rounded-2xl bg-black/20 border border-white/10 p-4">
+            <b>Certificado de conclusão</b>
+            <p class="text-sm text-white/65 mt-1">Disponível ao final do programa para quem completar o conteúdo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><section id="faq" class="py-14">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="reveal text-center max-w-3xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-black tracking-tight">Perguntas frequentes</h2>
+    </div><div class="mt-10 grid lg:grid-cols-2 gap-4">
+  <details class="reveal glass rounded-2xl p-6">
+    <summary class="cursor-pointer font-extrabold">Isso substitui faculdade?</summary>
+    <p class="mt-3 text-sm text-white/70">Não substitui graduação nem habilitação profissional. O foco aqui é desenvolver raciocínio, tomada de decisão, visão estratégica e capacidade de criação aplicável à vida real.</p>
+  </details>
+
+  <details class="reveal glass rounded-2xl p-6">
+    <summary class="cursor-pointer font-extrabold">Para quem isso é mais útil?</summary>
+    <p class="mt-3 text-sm text-white/70">Para quem quer pensar melhor, evitar erros, gastar menos, ganhar mais, organizar a vida, melhorar carreira ou criar produtos, serviços e projetos próprios.</p>
+  </details>
+
+  <details class="reveal glass rounded-2xl p-6">
+    <summary class="cursor-pointer font-extrabold">Preciso ter experiência ou formação?</summary>
+    <p class="mt-3 text-sm text-white/70">Não. Você pode começar do zero. O programa foi pensado tanto para iniciantes quanto para profissionais que querem evoluir o raciocínio.</p>
+  </details>
+
+  <details class="reveal glass rounded-2xl p-6">
+    <summary class="cursor-pointer font-extrabold">Isso ajuda a ganhar dinheiro?</summary>
+    <p class="mt-3 text-sm text-white/70">O programa não promete renda direta. Ele desenvolve a capacidade de tomar melhores decisões, identificar oportunidades e criar valor — o que pode aumentar sua renda ao longo do tempo.</p>
+  </details>
+</div>
+
+  </div>
+</section><section id="aplicar" class="py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="reveal text-center max-w-3xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-black tracking-tight">Aplicar e receber a trilha ideal</h2>
+      <p class="mt-4 text-white/75 leading-relaxed">Preencha e abra o WhatsApp com sua mensagem pronta.</p>
+    </div><div class="mt-10 grid lg:grid-cols-2 gap-6 items-start">
+  <div class="reveal glass rounded-3xl p-7">
+    <h3 class="text-2xl font-black">O que você recebe</h3>
+    <ul class="mt-5 space-y-3 text-sm text-white/72">
+      <li>• Ementa completa.</li>
+      <li>• Recomendação de nível: Start, Autonomia ou Fundadores.</li>
+      <li>• Explicação de investimento e parcelamento.</li>
+      <li>• Próximos passos para entrar no ciclo.</li>
+    </ul>
+    <div class="mt-6 rounded-2xl bg-black/20 border border-white/10 p-5 text-sm text-white/70">
+      <b>Mensagem pronta:</b>
+      <p id="waTemplate" class="mt-2">Olá! Quero aplicar para o programa Raciocinando Como. Pode me enviar a ementa completa, a trilha ideal para meu perfil, valores, parcelamento e próximos passos?</p>
+    </div>
+  </div>
+
+  <form id="applyForm" class="reveal glass rounded-3xl p-7 glow space-y-4">
+    <div class="grid md:grid-cols-2 gap-4">
+      <input id="fName" required class="px-4 py-3 rounded-2xl bg-black/20 border border-white/10 outline-none" placeholder="Nome completo" />
+      <input id="fWhats" required class="px-4 py-3 rounded-2xl bg-black/20 border border-white/10 outline-none" placeholder="WhatsApp" />
+    </div>
+    <div class="grid md:grid-cols-2 gap-4">
+      <select id="fProfile" required class="px-4 py-3 rounded-2xl bg-black/20 border border-white/10 outline-none">
+        <option value="" disabled selected>Perfil</option>
+        <option>Jovem / estudante</option>
+        <option>Profissional</option>
+        <option>Empreendedor</option>
+        <option>Futuro fundador</option>
+        <option>Outro</option>
+      </select>
+      <select id="fLevel" required class="px-4 py-3 rounded-2xl bg-black/20 border border-white/10 outline-none">
+        <option value="" disabled selected>Nível de interesse</option>
+        <option>Start</option>
+        <option>Autonomia</option>
+        <option>Fundadores</option>
+        <option>Quero recomendação</option>
+      </select>
+    </div>
+    <textarea id="fGoal" required class="w-full px-4 py-3 rounded-2xl bg-black/20 border border-white/10 outline-none min-h-[120px]" placeholder="Qual seu principal objetivo? Ex.: ganhar mais, gastar menos, criar projeto, mudar carreira, empreender..."></textarea>
+    <button type="submit" class="w-full inline-flex justify-center items-center px-6 py-4 rounded-2xl bg-gradient-to-r from-accent to-green text-brand font-black hover:brightness-105 transition">
+      Enviar pelo WhatsApp
+    </button>
+    <div id="formMsg" class="hidden rounded-2xl p-4 border border-white/10 bg-black/20 text-sm text-white/75"></div>
+    <p class="text-xs text-white/55">Ao enviar, você abre o WhatsApp com a mensagem pronta. Seus dados não são salvos nesta página estática.</p>
+  </form>
+</div>
+
+  </div>
+</section><footer class="py-10 text-center text-white/50 text-sm border-t border-white/10">
+  © <span id="year"></span> Raciocinando Como — Formação prática para pensamento, decisão e criação.
+</footer><script>
+  const CONFIG = {
+    waDigits: "5591980144854",
+    programName: "Raciocinando Como"
+  };
+
+  const $ = (s, el=document) => el.querySelector(s);
+  const $$ = (s, el=document) => Array.from(el.querySelectorAll(s));
+  const onlyDigits = s => (s || "").replace(/\D/g,"");
+  const waLink = message => `https://wa.me/${CONFIG.waDigits}?text=${encodeURIComponent(message)}`;
+
+  function initReveal(){
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); }
+      });
+    }, {threshold: .14});
+    $$(".reveal").forEach(el => io.observe(el));
+  }
+
+  function initWA(){
+    const base = `Olá! Quero detalhes do programa *${CONFIG.programName}*. Pode me enviar ementa completa, trilhas, valores, parcelamento e próximos passos?`;
+    ["#nav-wa", "#hero-wa"].forEach(id => $(id).href = waLink(base));
+  }
+
+  function initForm(){
+    $("#applyForm").addEventListener("submit", e => {
+      e.preventDefault();
+      const d = {
+        name: $("#fName").value.trim(),
+        whats: $("#fWhats").value.trim(),
+        profile: $("#fProfile").value,
+        level: $("#fLevel").value,
+        goal: $("#fGoal").value.trim()
+      };
+      const msgBox = $("#formMsg");
+      if(!d.name || onlyDigits(d.whats).length < 10 || !d.profile || !d.level || d.goal.length < 15){
+        msgBox.textContent = "Revise os campos antes de enviar.";
+        msgBox.classList.remove("hidden");
+        return;
+      }
+      const msg = `Olá! Quero aplicar para *${CONFIG.programName}*.\n\nNome: ${d.name}\nWhatsApp: ${d.whats}\nPerfil: ${d.profile}\nNível de interesse: ${d.level}\n\nMeu objetivo:\n${d.goal}\n\nPode me enviar ementa completa, trilha recomendada, valores, parcelamento e próximos passos?`;
+      window.open(waLink(msg), "_blank", "noopener,noreferrer");
+    });
+  }
+
+  (function init(){
+    $("#year").textContent = new Date().getFullYear();
+    initReveal();
+    initWA();
+    initForm();
+  })();
+</script></body>
+</html>
